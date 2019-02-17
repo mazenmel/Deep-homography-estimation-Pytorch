@@ -9,7 +9,7 @@ import random
 import numpy as np
 from numpy.linalg import inv
 
-img_path = 'C://Users//MEL//Desktop//14572634_1249839005066331_1506895333_o.jpg'
+img_path = '../path'
 img = cv2.imread(img_path,0)
 img = cv2.resize(img,(320,240))
 
