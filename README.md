@@ -7,7 +7,7 @@ This is an implementation of the paper "Deep Image Homography Estimation", by Da
       and produces an 8 degree of freedomhomography  which  can  be  used  to  map  
       the  pixels  from  thefirst  image  to  the  second." Abstract
       
-MS-COCO 2017 dataset is relatively big (18GB of 118,287 training samples) as described by the paper we trained the model on 90000 iterations for 48 epochs with NVIDIA tesla p4 GPU, the training took approximately 7 hours (ANNEX B present the training status of our network). We used stochastic gradient descent (SGD) with momentum of 0.9 and a learning rate of 0.005 and dropout enabled in the last convolutional layer and the first fully connected layer. We evaluated the model on MS-COCO 2017 validation set. The performance of our model is based on the L2 loss values omitted by the network.
+MS-COCO 2017 dataset is relatively big (18GB of 118,287 training samples) as described by the paper we trained the model on 90000 iterations for 48 epochs with NVIDIA tesla p4 GPU, the training took approximately 7 hours. We used stochastic gradient descent (SGD) with momentum of 0.9 and a learning rate of 0.005 and dropout enabled in the last convolutional layer and the first fully connected layer. We evaluated the model on MS-COCO 2017 validation set. The performance of our model is based on the L2 loss values omitted by the network.
 
 Due to the specification of the task that requires a new way of organizing the data that will be fed into the network, we have implemented our own Dataset class in pytorch so that the data loader can produces iterable samples of data knowing the sample X and the corresponding label Y.
 
