@@ -1,4 +1,4 @@
-# Deep homography estimator (work in progress)
+# Deep homography estimator (Pytorch)
 
 This is an implementation of the paper "Deep Image Homography Estimation", by Daniel DeTone, Tomasz Malisiewicz and Andrew Rabinovich: https://arxiv.org/pdf/1606.03798.pdf
       
