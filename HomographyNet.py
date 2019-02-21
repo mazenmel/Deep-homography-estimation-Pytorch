@@ -1,5 +1,6 @@
 import torch.nn as nn
 import torch.nn.functional as F
+import torch.optim as optim
 
 class Model(nn.Module):
     def __init__(self):
@@ -52,9 +53,5 @@ class Model(nn.Module):
 from torchsummary import summary 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu") 
 model = Model().to(device)
-
 summary(model,(2,128,128))
 
-import torch.optim as optim
-criterion = nn.MSELoss()
-optimizer = optim.SGD(model.parameters(),lr=0.005, momentum=0.9)
