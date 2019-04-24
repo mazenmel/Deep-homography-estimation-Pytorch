@@ -38,4 +38,4 @@ GPU Memory                    --->	8 GB
 Training deep convolutional networks from scratch requires a large amount of data. To meet this requirement, the authors have generated a large enough data from the MS-COCO dataset by applying random projective transformations to a large data.
 The generation of images pairs as well as the corresponding homography is done within 4 steps:
 
-![batches image](mazenmel/Deep-homography-estimation-Pytorch/batches.PNG)
+![alt text](/batches.png)
