@@ -39,3 +39,7 @@ Training deep convolutional networks from scratch requires a large amount of dat
 The generation of images pairs as well as the corresponding homography is done within 4 steps:
 
 ![alt text](images/batches.PNG "Data generation")
+
+Finally, Stack Patch A and Patch B channel-wise and feed into the network. Set HAB as the target vector.
+
+![alt text](images/stack.PNG "feed batch")
