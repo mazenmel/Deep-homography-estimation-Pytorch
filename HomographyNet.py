@@ -1,7 +1,6 @@
 from fastai.vision import *
 import torch.nn as nn
 import torch.nn.functional as F
-import torch.optim as optim
 
 class Model(nn.Module):
     def __init__(self):
@@ -50,9 +49,6 @@ class Model(nn.Module):
         out = self.fc1(out)
         out = self.fc2(out)
         return out
-        
-from torchsummary import summary 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu") 
-model = Model().to(device)
-summary(model,(2,128,128))
+
+
 

@@ -1,20 +1,8 @@
-
-from __future__ import print_function
-import argparse
-from fastai.vision import *
-from glob import glob
 from matplotlib import pyplot as plt
 import cv2
 import random
 import numpy as np
 from numpy.linalg import inv
-import torch.nn as nn
-import torch.nn.functional as F
-from torchsummary import summary
-import torch.optim as optim
-
-
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 train_path = '/data/train2017'
 validation_path = '/data/val2017'
